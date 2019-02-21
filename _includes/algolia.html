@@ -1,0 +1,69 @@
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+const search = instantsearch({
+  appId: '{{ site.algolia.application_id }}',
+  apiKey: '{{ site.algolia.search_only_api_key }}',
+  indexName: '{{ site.algolia.index_name }}'
+});
+
+const hitTemplate = function(hit) {
+
+  let url = `{{ site.baseurl }}${hit.url}`;
+
+  let image = hit.image;
+
+  const title = hit._highlightResult.title.value;
+  
+  let length = 100;
+  let content = hit._highlightResult.html.value;
+  let shortContent= content.substring(0,length);
+
+  const type = hit.type;
+  if(type == "post"){
+    return `
+      <div class="mb-30px card-group inner-search">
+        <div class="card h-100">
+            <div class="maxthumb">
+                <a href="${url}">
+                    <img class="img-fluid" src="${image}" alt="image">
+                </a>
+            </div>
+            <div class="card-body">
+                <h2 class="card-title"><a class="text-dark" href="${url}">${ title }</a></h2>
+                <h4 class="card-text">${shortContent}<a class="text-dark" href="${url}">(...)</a></h4>            
+            </div>
+        </div>
+    </div>
+  `;
+  }
+}
+
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search into posts...',
+    poweredBy: true // This is required if you're on the free Community plan
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: hitTemplate
+    },
+		cssClasses: {
+			root: "row listrecent",
+      item: "col-lg-4 col-md-6 mb-30px card-group"
+		}
+  })
+);
+
+search.start();
+</script>
+

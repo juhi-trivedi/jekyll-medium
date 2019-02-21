@@ -1,0 +1,77 @@
+name: "Medium"
+title: Medium
+email: your-email@example.com
+description: Jekyll Template for Blogging based on Medium
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+include: ["_pages"]
+permalink: /:title/
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+meta_description: "Jekyll template, Medium styled, free for bloggers."
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+#plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+#Authors
+authors:
+  jack:
+    name: Jack
+    display_name: jack
+    image: 'assets/images/man-1.jpg'
+    email: jack@gmail.com
+    web: https://www.google.com
+    twitter: https://twitter.com/
+    description: "Author of Medium, a Bootstrap Medium styled template available for WordPress, HTML, Jekyll. You are currently previewing Jekyll template demo."
+  john:
+    name: John
+    display_name: john
+    image: 'assets/images/man-2.jpeg'
+    email: john@gmail.com
+    web: https://www.google.com
+    twitter: https://twitter.com/
+    description: "Co-founder of Medium, You are currently previewing Jekyll template demo."
+
+# Pagination 
+paginate: 5
+paginate_path: "/blog/page:num/index.html"
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+# Algolia
+algolia:
+  application_id: 'XOB695OZYL'
+  index_name: 'jekyll'
+  search_only_api_key: '920e1eb2db3915dd677425687b885cf1'
+
+# for algolia data push [run in bash]:: ALGOLIA_API_KEY='your_admin_api_key' bundle exec jekyll algolia push
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
