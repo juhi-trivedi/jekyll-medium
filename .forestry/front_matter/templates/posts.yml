@@ -17,16 +17,23 @@ fields:
     required: true
   label: Layout
   default: default
+  description: Choose your layout
 - type: text
   label: title
   name: title
   config:
     required: true
+  description: Give your project a title
 - type: datetime
   name: date
   label: Date
   config:
     date_format: YYYY/MM/DD
+  description: Enter a specific date for your project
+- type: text
+  name: permalink
+  label: Permalink
+  description: 'Provide permalink here, for eg: /blog/'
 - type: tag_list
   label: Categories
   name: categories
@@ -41,3 +48,6 @@ fields:
   - blogs
   - Hello
   - wordpress
+- type: file
+  name: image/file_upload
+  label: Image/File Upload
