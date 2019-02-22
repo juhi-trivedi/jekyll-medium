@@ -1,0 +1,66 @@
+---
+label: Default
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+  description: Enter title here
+- type: datetime
+  name: date
+  label: Date
+  config:
+    date_format: YYYY/MM/DD
+  description: Enter a specific date
+- type: text
+  name: author
+  label: Author
+  description: 'Provide author name, for eg: ''admin'''
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    options:
+    - Default
+    - Page
+    - Post
+    - Categories
+    - Archive
+  label: Layout
+  description: Select a specific layout
+- type: text
+  name: permalink
+  label: Permalink
+  description: 'Enter permalink '
+- type: tag_list
+  name: cate
+  label: Categories
+  default:
+  - Uncategorized
+  - Jekyll
+  - Demo
+  description: Add/Remove Categories
+- type: tag_list
+  name: tags
+  label: Tags
+  default:
+  - blogs
+  - Hello
+  - wordpress
+  description: Add/Remove Tags
+- type: file
+  name: image
+  label: Image
+  description: Add an image
+- type: boolean
+  name: featured
+  label: Featured
+  description: Display in featured section
+- type: boolean
+  name: hidden
+  label: Hidden
+  description: Hide from All Listing
