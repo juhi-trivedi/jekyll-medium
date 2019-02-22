@@ -28,6 +28,13 @@ fields:
   config:
     date_format: YYYY/MM/DD
 - type: tag_list
+  label: Categories
+  name: categories
+  default:
+  - Uncategorized
+  - Jekyll
+  - Demo
+- type: tag_list
   label: Tags
   name: tags
   default:
