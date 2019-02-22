@@ -12,6 +12,7 @@ fields:
     - default
     - page
     - post
+    - categories
     required: true
   label: Layout
   default: default
