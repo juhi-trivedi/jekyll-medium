@@ -39,3 +39,13 @@ fields:
   - blogs
   - Hello
   - wordpress
+- type: file
+  name: image
+  label: Image
+- type: boolean
+  label: Featured
+  name: featured
+- type: boolean
+  label: Hidden
+  name: hidden
+  description: Hide this from Listing it in all posts
