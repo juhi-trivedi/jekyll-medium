@@ -589,8 +589,8 @@ License: https://www.wowthemes.net/freebies-license/
     max-width:100%;
 }
 .transpdark {    
-    background: rgba(0,0,0,0.75);
-    color: #fff;
+    color: #000;
+    font-weight: bold
 }
  @media (min-width:768px) {
      .jumbotron.fortags {
@@ -599,33 +599,46 @@ License: https://www.wowthemes.net/freebies-license/
          padding:0;
          height:350px;
          border-radius:0;
-         background-image: url(../images/jumbotron.jpg);
+         background-image: url(../images/jumbotron.jpeg);
          background-size:cover;
     }
      .jumbotron.fortags .col-md-4 {
-         background:rgba(0,0,0,0.75);
-         color:#fff;
+         color:#000;
+         font-weight: bold
     }
      .jumbotron.fortags .row {
          margin:0;
+    }
+    .jumbotron-fortags .d-md-block {
+        font-weight: 500 !important;
     }
 }
 .jumbotron.fortags { 
          margin-top: 3rem;
          padding:0;
          border-radius:0;
-         background-image: url(../images/jumbotron.jpg);
+         background-image: url(../images/jumbotron.jpeg);
          background-size:cover;
+         background-position: center;
 }
  .jumbotron.fortags a {
-     padding: 5px 10px 7px;
-     background: #222;
+     padding: 6px 13px 7px;
+     background: #2f2f2f;
      border-radius: 30px;
      color: #fff;
      font-weight: 500;
      text-transform: lowercase;
      font-size: 0.8rem;
      display: inline-block;
+}
+.jumbotron.fortags a span {
+    color: #ffc5c1;
+    font-weight: bold;
+    margin-left: 3px;
+}
+.jumbotron.fortags a:hover {
+    color: #fec3bf;
+    background: #000000;
 }
  .layout-page .jumbotron.fortags {
     display:none;

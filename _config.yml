@@ -27,11 +27,11 @@ plugins:
 
 #Authors
 authors:
-  jack:
-    name: Jack
-    display_name: jack
+  admin:
+    name: Admin
+    display_name: admin
     image: 'assets/images/man-1.jpg'
-    email: jack@gmail.com
+    email: admin@gmail.com
     web: https://www.google.com
     twitter: https://twitter.com/
     description: "Author of Medium, a Bootstrap Medium styled template available for WordPress, HTML, Jekyll. You are currently previewing Jekyll template demo."
@@ -45,7 +45,7 @@ authors:
     description: "Co-founder of Medium, You are currently previewing Jekyll template demo."
 
 # Pagination 
-paginate: 5
+paginate: 6
 paginate_path: "/blog/page:num/index.html"
     
 # Archives
