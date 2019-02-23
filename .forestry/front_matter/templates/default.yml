@@ -22,6 +22,8 @@ fields:
 - type: text
   name: layout
   label: Layout
+  description: 'Choose from: post, page, default, archive & categories to display
+    it correctly'
 - type: text
   name: permalink
   label: Permalink
