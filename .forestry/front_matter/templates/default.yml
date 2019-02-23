@@ -29,7 +29,7 @@ fields:
   label: Permalink
   description: 'Enter permalink '
 - type: tag_list
-  name: cate
+  name: categories
   label: Categories
   default:
   - Uncategorized
