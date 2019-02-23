@@ -11,6 +11,8 @@ permalink: "/adding-blog-via-forestry/"
 image: assets/images/16.jpg
 featured: false
 hidden: false
+categories:
+- jekyll
 
 ---
 ## What is Lorem Ipsum?
