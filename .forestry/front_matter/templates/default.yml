@@ -64,3 +64,5 @@ fields:
   name: hidden
   label: Hidden
   description: Hide from All Listing
+pages:
+- _posts/adding-blog-via-forestry-editor.md
