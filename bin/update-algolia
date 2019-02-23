@@ -1,3 +1,0 @@
-#!/bin/sh
-
-ALGOLIA_API_KEY='2c619378c730df4b98f34395528a4c33' bundle exec jekyll algolia push
