@@ -19,19 +19,9 @@ fields:
   name: author
   label: Author
   description: 'Provide author name, for eg: ''admin'''
-- type: select
+- type: text
   name: layout
-  config:
-    source:
-      type: simple
-    options:
-    - Default
-    - Page
-    - Post
-    - Categories
-    - Archive
   label: Layout
-  description: Select a specific layout
 - type: text
   name: permalink
   label: Permalink
