@@ -7,7 +7,7 @@ title: Adding blog via forestry
 date: 2019-02-22 18:30:00 +0000
 author: admin
 layout: post
-permalink: "/adding-blog-via-forestry-editor/"
+permalink: "/adding-blog-via-forestry/"
 image: assets/images/16.jpg
 featured: false
 hidden: false
