@@ -40,4 +40,4 @@ jobs:
 
       - run:
           name: Update Algolia
-          command: ALGOLIA_API_KEY='${ALGOLIA_API_KEY}' bundle exec jekyll algolia push
+          command: ALGOLIA_API_KEY='$ALGOLIA_API_KEY' bundle exec jekyll algolia push
