@@ -1,9 +1,9 @@
 ---
 cate:
-- Jekyll
+- jekyll
 tags:
 - blogs
-title: Adding blog via forestry editor
+title: Adding blog via forestry
 date: 2019-02-22 18:30:00 +0000
 author: admin
 layout: post
