@@ -56,5 +56,3 @@ fields:
   name: hidden
   label: Hidden
   description: Hide from All Listing
-pages:
-- _posts/2019-02-22-adding-blog-via-forestry-editor.md
