@@ -6,7 +6,7 @@ tags:
 title: Adding blog via forestry editor
 date: 2019-02-22 18:30:00 +0000
 author: admin
-layout: Post
+layout: post
 permalink: "/adding-blog-via-forestry-editor/"
 image: assets/images/16.jpg
 featured: false
