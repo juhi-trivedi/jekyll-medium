@@ -12,7 +12,7 @@ date: 2019-02-22 18:30:00 +0000
 author: admin
 layout: post
 permalink: "/exploring-algolia-automatic-builds/"
-image: ''
+image: assets/images/jumbotron.jpeg
 featured: false
 hidden: false
 
