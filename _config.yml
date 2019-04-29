@@ -1,7 +1,7 @@
-name: "Medium"
-title: Medium
+name: "Blogable"
+title: Blogable
 email: your-email@example.com
-description: Jekyll Template for Blogging based on Medium
+description: Jekyll Template for Blogging
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -9,8 +9,8 @@ github_username:  jekyll
 include: ["_pages"]
 permalink: /:title/
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
-meta_description: "Jekyll template, Medium styled, free for bloggers."
+favicon: 'assets/images/favicon.ico'
+meta_description: "Jekyll template for bloggers."
 
 
 # Build settings

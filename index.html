@@ -6,25 +6,24 @@ title: Home
 {% if page.url == "/" %}
 
 <!-- Algolia HTML
-================================================== --> 
-<div class="post-list" id="search-hits">
-</div>
-{% include algolia.html %}  
-
-<!-- Featured
 ================================================== -->
-<section class="featured-post">
+<div class="all-posts">
+    <!-- <div class="section-title">
+        <h2><span>All Blogs:</span></h2>
+    </div> -->
+    <div class="post-list" id="search-hits">
+    </div>
+</div>
+{% include algolia.html %}
+
+<!-- Algolia HTML
+================================================== -->
+<div class="searchwithgoogle">
     <div class="section-title">
-        <h2><span>Featured</span></h2>
+        <h2><span>Explore from Google:</span></h2>
     </div>
-    <div class="row">  
-        {% for post in site.posts %}
-            {% if post.featured == true %}
-                {% include featuredbox.html %}
-            {% endif %}
-        {% endfor %}        
-    </div>
-</section>
+    {% include google-search.html %}
+    <gcse:search></gcse:search>
+</div>
 
 {% endif %}
-
